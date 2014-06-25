@@ -30,13 +30,17 @@ int main( )
  
   long current_time ;
   long start_time = 0;
-  float total_drinks;
+  
+  //conversions
+  float beverage_pc_alcohol = 0.0720;
+  float beverage_size_in_fluid_ounces = 12.0;
+  float total_std_drinks = beverage_pc_alcohol * (beverage_size_in_fluid_ounces * 29.57)/14;
 
   vector<float> ebacs;
 
   // calculations  
   current_time = 1; 
-  current_ebac = constants * total_drinks - ( metabolism * (current_time - start_time ));
+  current_ebac = constants * total_std_drinks - ( metabolism * (current_time - start_time ));
   
   ebacs.push_back(current_ebac);
   return 0;
