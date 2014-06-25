@@ -1,32 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
-
-class WeightedDrink 
-{
-  public:
-  float std_drinks; 
-  float dt; 
-
-  WeightedDrink( float = 0.0, float = 0.0 );
-  WeightedDrink operator + ( const WeightedDrink &operand ) const;
-};
-
-WeightedDrink::WeightedDrink(float a, float b) : std_drinks(a) , dt(b) {}
-
-WeightedDrink WeightedDrink::operator * ( const WeightedDrink &operand ) const
-{
-  return WeightedDrink( std_drinks*dt + operand.std_drinks, dt + operand.dt);
-}
-
-float integrate(const vector<WeightedDrink> &v)
-{
-  float acc = 0.0;
-  for(unsigned int i = 0; i < v.size(); ++i)
-	acc += v[i] + v[i];
-  return acc;
-}
 
 int main( )
 {
@@ -50,14 +26,19 @@ int main( )
   float standard_drinks = 1.0;	// 10 grams of ethenol
   float duration = 1.23; 	// duration in hours 
 
-  float ebac;
-  
-  vector<WeightedDrink> validDrinks;
+  float current_ebac;
+ 
+  long current_time ;
+  long start_time = 0;
+  float total_drinks;
+
+  vector<float> ebacs;
 
   // calculations  
-  ebac = constants * std_drinks - ( metabolism - duration);
-  vector<WeightedDrink> valid_drinks;
+  current_time = 1; 
+  current_ebac = constants * total_drinks - ( metabolism * (current_time - start_time ));
   
+  ebacs.push_back(current_ebac);
   return 0;
 }
 
