@@ -1,0 +1,28 @@
+<head>
+  <title>prototype</title>
+</head>
+
+<body>
+  {{> dwf_content}}
+</body>
+
+
+<template name="dwf_content">
+
+    <h1>Drinking With Friends</h1>
+
+    <div class="infobox">To understand the significance of meteor, open another browser 
+    window, or even open up this page on another device, and watch the 
+    namelist populate ubiquitously as you enter data.</div>
+    <br /><br />
+
+    <input type="text" id="name" placeholder="Enter a name" />
+    <div class="light">Press Enter to send.</div>
+
+    <ul>
+    {{#each namelist}}
+        <li> {{name}} </li>
+    {{/each}}
+    </ul>
+
+</template>
