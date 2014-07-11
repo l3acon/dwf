@@ -29,3 +29,20 @@ meteor install stylus
 Stylus is a css preprocessor.  
 You can write your usual css, but don't put '{}'s...  ':'s, and ';'s are optional.
 Just don't forget to indent.
+
+
+Running Meteor
+==============
+
+```bash
+
+#from 'prototype' directory
+
+#to run in your terminal
+meteor
+
+#to run in bg
+meteor &>../meteor_log &
+disown %1 #or whatever job number meteor is...
+
+```
