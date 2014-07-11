@@ -46,3 +46,6 @@ meteor &>../meteor_log &
 disown %1 #or whatever job number meteor is...
 
 ```
+
+You won't need to restart meteor to see changes.  Meteor employs HCR (Hot Code Reloads).
+If you need to stop meteor, `^C` or `SIGTERM` from `kill`.
