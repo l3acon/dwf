@@ -1,0 +1,25 @@
+!!! 5
+%html
+  %head
+    %title Sign Up
+    %link{href: "ionic.css", rel: "stylesheet", type: "text/css"}
+    %link{href: "ionicons.css", rel: "stylesheet", type: "text/css"}
+    %meta{content: "width=device-width, user-scalable=no, minimal-ui", name: "viewport"}
+  %body
+    .bar.bar-header.bar-stable
+      %a{class: "button icon-left ion-chevron-left button-clear button-dark", href: '/'}
+      %h1.title Sign Up
+    %div{class: "content.has-header.padding", style: "padding-right: 6px; padding-left: 6px;"}
+      .row{align: "center", style: "padding-bottom: 2px; padding-top: 44px;"}
+        .col
+          %img{src: "logo.png"}
+      .row
+        %div{class: ".col.col-50"}
+          %p Welcome to Dw/F! <p> We are passionate about drinking good beer. None of that gas-station on sale 40oz junk, but that good hand crafted beer. The only problem with that is.. Well you don't know whats good and whats horrible (depending on your taste). With this app, you can stop looking like a fool when you go out, and start looking like that beer aficionado in no time. <p>Here at Dw/F you will be able to see all the different types of beer your friends drink and the locals from hand crafted beer to local breweries and commercial breweries from all over the world! We're still working on releasing this bad boy so you wont be able to sign up just yet... <p> Having said that, you can send us your email and we'll notify you as soon as the first wave of beta keys are released!<p>We will guide your tastebuds to a new level of ignorant bliss!
+      %form{:action => '/email', :method => "post"}
+        .list
+          %div{class: "item item-input-inset"}
+            %label{class: "item-input-wrapper"}
+              %input{type: "text", placeholder: "Email", name: "email"}
+            %button{class: "button button-small", type: "submit"}
+              Submit

@@ -1,0 +1,240 @@
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.6.2 codename Doc Brown)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3000, CTRL+C to stop
+Exiting!
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.6.2 codename Doc Brown)
+Maximum connections set to 1024
+Listening on 0.0.0.0:80, CTRL+C to stop
+166.137.209.28 - - [23/Jul/2014 17:54:29] "GET / HTTP/1.1" 200 1450 0.0307
+166.137.209.28 - - [23/Jul/2014 17:54:29] "GET /ionic.css HTTP/1.1" 200 204836 0.0031
+166.137.209.28 - - [23/Jul/2014 17:54:29] "GET /logo.png HTTP/1.1" 200 6461 0.0016
+166.137.209.28 - - [23/Jul/2014 17:54:30] "GET /favicon.ico HTTP/1.1" 404 18 0.0017
+166.137.209.28 - - [23/Jul/2014 17:54:35] "GET /signup HTTP/1.1" 200 2117 0.0114
+166.137.209.28 - - [23/Jul/2014 17:54:35] "GET /ionicons.css HTTP/1.1" 200 47987 0.0020
+166.137.209.28 - - [23/Jul/2014 17:54:36] "GET /favicon.ico HTTP/1.1" 404 18 0.0015
+166.137.209.28 - - [23/Jul/2014 17:54:36] "GET /fonts/ionicons.ttf?v=1.5.2 HTTP/1.1" 200 164548 0.0025
+166.137.209.28 - - [23/Jul/2014 17:54:39] "GET / HTTP/1.1" 200 1450 0.0043
+166.137.209.28 - - [23/Jul/2014 17:54:40] "GET /favicon.ico HTTP/1.1" 404 18 0.0024
+Waiting for 2 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
+Exiting!
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.6.2 codename Doc Brown)
+Maximum connections set to 1024
+Listening on 0.0.0.0:80, CTRL+C to stop
+166.137.209.23 - - [23/Jul/2014 18:05:22] "GET /signup HTTP/1.1" 200 2117 0.0302
+166.137.209.23 - - [23/Jul/2014 18:05:22] "GET /ionic.css HTTP/1.1" 304 - 0.0016
+166.137.209.23 - - [23/Jul/2014 18:05:22] "GET /logo.png HTTP/1.1" 304 - 0.0014
+166.137.209.23 - - [23/Jul/2014 18:05:22] "GET /ionicons.css HTTP/1.1" 304 - 0.0013
+166.137.209.23 - - [23/Jul/2014 18:05:22] "GET /fonts/ionicons.ttf?v=1.5.2 HTTP/1.1" 304 - 0.0019
+166.137.209.23 - - [23/Jul/2014 18:05:23] "GET /favicon.ico HTTP/1.1" 404 18 0.0023
+166.137.209.23 - - [23/Jul/2014 18:05:24] "POST /email HTTP/1.1" 303 - 0.0138
+NoMethodError - undefined method `ObjectId' for #<Sinatra::Application:0xb9c39088>:
+	/var/www/dwf/app.rb:96:in `block in <top (required)>'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1593:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1593:in `block in compile!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:957:in `[]'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:957:in `block (3 levels) in route!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:976:in `route_eval'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:957:in `block (2 levels) in route!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:997:in `block in process_route'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:995:in `catch'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:995:in `process_route'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:955:in `block in route!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:954:in `each'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:954:in `route!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1067:in `block in dispatch!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1049:in `block in invoke'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1049:in `catch'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1049:in `invoke'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1064:in `dispatch!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:889:in `block in call!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1049:in `block in invoke'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1049:in `catch'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1049:in `invoke'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:889:in `call!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:877:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/xss_header.rb:18:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/base.rb:50:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/base.rb:50:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/path_traversal.rb:16:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/json_csrf.rb:18:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/base.rb:50:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/base.rb:50:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-protection-1.5.1/lib/rack/protection/frame_options.rb:31:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:217:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:210:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:180:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:2004:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1469:in `block in call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1778:in `synchronize'
+	/usr/local/lib/ruby/gems/2.0.0/gems/sinatra-1.4.4/lib/sinatra/base.rb:1469:in `call'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/connection.rb:86:in `block in pre_process'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/connection.rb:84:in `catch'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/connection.rb:84:in `pre_process'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/connection.rb:53:in `process'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/connection.rb:39:in `receive_data'
+	/usr/local/lib/ruby/gems/2.0.0/gems/eventmachine-1.0.3/lib/eventmachine.rb:187:in `run_machine'
+	/usr/local/lib/ruby/gems/2.0.0/gems/eventmachine-1.0.3/lib/eventmachine.rb:187:in `run'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/backends/base.rb:73:in `start'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/server.rb:162:in `start'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/controllers/controller.rb:87:in `start'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/runner.rb:199:in `run_command'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/lib/thin/runner.rb:155:in `run!'
+	/usr/local/lib/ruby/gems/2.0.0/gems/thin-1.6.2/bin/thin:6:in `<top (required)>'
+	/usr/local/bin/thin:23:in `load'
+	/usr/local/bin/thin:23:in `<main>'
+166.137.209.23 - - [23/Jul/2014 18:05:24] "GET /thankyou HTTP/1.1" 500 30 0.0433
+166.137.209.23 - - [23/Jul/2014 18:05:25] "GET /favicon.ico HTTP/1.1" 404 18 0.0018
+Exiting!
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.6.2 codename Doc Brown)
+Maximum connections set to 1024
+Listening on 0.0.0.0:80, CTRL+C to stop
+166.137.209.23 - - [23/Jul/2014 18:09:00] "GET /thankyou HTTP/1.1" 200 1083 0.0338
+166.137.209.23 - - [23/Jul/2014 18:09:01] "GET /ionic.css HTTP/1.1" 304 - 0.0018
+166.137.209.23 - - [23/Jul/2014 18:09:01] "GET /ionicons.css HTTP/1.1" 304 - 0.0014
+166.137.209.23 - - [23/Jul/2014 18:09:01] "GET /logo.png HTTP/1.1" 304 - 0.0015
+166.137.209.23 - - [23/Jul/2014 18:09:01] "GET /favicon.ico HTTP/1.1" 404 18 0.0027
+166.137.209.23 - - [23/Jul/2014 18:09:15] "GET /thankyou HTTP/1.1" 200 1268 0.0060
+166.137.209.23 - - [23/Jul/2014 18:09:15] "GET /favicon.ico HTTP/1.1" 404 18 0.0018
+66.249.69.88 - - [23/Jul/2014 18:10:01] "GET /?p=40 HTTP/1.1" 200 1450 0.0141
+70.214.64.132 - - [23/Jul/2014 18:10:09] "GET / HTTP/1.1" 200 1450 0.0031
+70.214.64.132 - - [23/Jul/2014 18:10:09] "GET /ionic.css HTTP/1.1" 200 204836 0.0030
+70.214.64.132 - - [23/Jul/2014 18:10:09] "GET /logo.png HTTP/1.1" 200 6461 0.0024
+70.214.64.132 - - [23/Jul/2014 18:10:10] "GET /favicon.ico HTTP/1.1" 404 18 0.0024
+70.214.64.132 - - [23/Jul/2014 18:10:28] "POST /login HTTP/1.1" 303 - 0.0035
+70.214.64.132 - - [23/Jul/2014 18:10:28] "GET /profile HTTP/1.1" 302 - 0.0016
+70.214.64.132 - - [23/Jul/2014 18:10:28] "GET / HTTP/1.1" 200 1450 0.0031
+70.214.64.132 - - [23/Jul/2014 18:10:30] "POST /login HTTP/1.1" 303 - 0.0036
+70.214.64.132 - - [23/Jul/2014 18:10:30] "GET /profile HTTP/1.1" 302 - 0.0017
+70.214.64.132 - - [23/Jul/2014 18:10:30] "GET / HTTP/1.1" 200 1450 0.0031
+70.214.64.132 - - [23/Jul/2014 18:10:34] "POST /login HTTP/1.1" 303 - 0.0029
+70.214.64.132 - - [23/Jul/2014 18:10:34] "GET /profile HTTP/1.1" 302 - 0.0016
+192.168.1.1 - - [23/Jul/2014 18:10:34] "GET / HTTP/1.1" 200 1450 0.0033
+192.168.1.1 - - [23/Jul/2014 18:10:34] "GET /ionic.css HTTP/1.1" 200 204836 0.0299
+70.214.64.132 - - [23/Jul/2014 18:10:34] "GET / HTTP/1.1" 200 1450 0.0032
+192.168.1.1 - - [23/Jul/2014 18:10:34] "GET /logo.png HTTP/1.1" 200 6461 0.0017
+70.214.64.132 - - [23/Jul/2014 18:10:35] "GET /signup HTTP/1.1" 200 2117 0.0129
+70.214.64.132 - - [23/Jul/2014 18:10:35] "GET /ionicons.css HTTP/1.1" 200 47987 0.0019
+70.214.64.132 - - [23/Jul/2014 18:10:35] "GET /fonts/ionicons.ttf?v=1.5.2 HTTP/1.1" 200 164548 0.0023
+192.168.1.1 - - [23/Jul/2014 18:10:38] "GET /signup HTTP/1.1" 200 2117 0.0031
+192.168.1.1 - - [23/Jul/2014 18:10:38] "GET /ionicons.css HTTP/1.1" 200 47987 0.0019
+192.168.1.1 - - [23/Jul/2014 18:10:38] "GET /fonts/ionicons.ttf?v=1.5.2 HTTP/1.1" 200 164548 0.0022
+174.56.21.217 - - [23/Jul/2014 18:10:48] "GET / HTTP/1.1" 200 816 0.0077
+174.56.21.217 - - [23/Jul/2014 18:10:48] "GET /ionic.css HTTP/1.1" 200 204836 0.0029
+174.56.21.217 - - [23/Jul/2014 18:10:48] "GET /ionicons.css HTTP/1.1" 200 47987 0.0018
+174.56.21.217 - - [23/Jul/2014 18:10:48] "GET /logo.png HTTP/1.1" 200 6461 0.0016
+174.56.21.217 - - [23/Jul/2014 18:10:48] "GET /favicon.ico HTTP/1.1" 404 18 0.0016
+192.168.1.1 - - [23/Jul/2014 18:11:02] "POST /email HTTP/1.1" 303 - 0.0095
+192.168.1.1 - - [23/Jul/2014 18:11:02] "GET /thankyou HTTP/1.1" 200 1096 0.0052
+2600:1011:b00b:44db:0:11:fdc1:1201 - - [23/Jul/2014 18:11:04] "GET / HTTP/1.1" 200 1450 0.0049
+2600:1011:b00b:44db:0:11:fdc1:1201 - - [23/Jul/2014 18:11:04] "GET /logo.png HTTP/1.1" 200 6461 0.0019
+2600:1011:b00b:44db:0:11:fdc1:1201 - - [23/Jul/2014 18:11:04] "GET /ionic.css HTTP/1.1" 200 204836 0.0031
+2600:1011:b00b:44db:0:11:fdc1:1201 - - [23/Jul/2014 18:11:05] "GET /favicon.ico HTTP/1.1" 404 18 0.0019
+70.214.64.132 - - [23/Jul/2014 18:11:15] "GET /signup HTTP/1.1" 200 2117 0.0032
+66.249.69.120 - - [23/Jul/2014 18:13:04] "GET /wp-includes/js/comment-reply.min.js?ver=3.5.1 HTTP/1.1" 404 18 0.0018
+W, [2014-07-23T18:13:05.681640 #1721]  WARN -- : attack prevented by Rack::Protection::SessionHijacking
+66.249.69.120 - - [23/Jul/2014 18:13:05] "GET /ionic.css HTTP/1.1" 200 204836 0.0030
+216.184.25.169 - - [23/Jul/2014 18:16:40] "GET / HTTP/1.1" 200 816 0.0038
+216.184.25.169 - - [23/Jul/2014 18:16:41] "GET /ionic.css HTTP/1.1" 200 204836 0.0028
+216.184.25.169 - - [23/Jul/2014 18:16:41] "GET /ionicons.css HTTP/1.1" 200 47987 0.0018
+216.184.25.169 - - [23/Jul/2014 18:16:41] "GET /logo.png HTTP/1.1" 200 6461 0.0022
+216.184.25.169 - - [23/Jul/2014 18:16:45] "GET /favicon.ico HTTP/1.1" 404 18 0.0016
+W, [2014-07-23T18:17:23.583955 #1721]  WARN -- : attack prevented by Rack::Protection::SessionHijacking
+216.184.25.169 - - [23/Jul/2014 18:17:23] "GET / HTTP/1.1" 200 1450 0.0034
+216.184.25.169 - - [23/Jul/2014 18:17:23] "GET /ionic.css HTTP/1.1" 304 - 0.0018
+216.184.25.169 - - [23/Jul/2014 18:17:23] "GET /logo.png HTTP/1.1" 304 - 0.0016
+216.184.25.169 - - [23/Jul/2014 18:17:27] "GET /signup HTTP/1.1" 200 2117 0.0033
+216.184.25.169 - - [23/Jul/2014 18:17:27] "GET /fonts/ionicons.ttf?v=1.5.2 HTTP/1.1" 200 164548 0.0027
+216.184.25.169 - - [23/Jul/2014 18:17:48] "POST /email HTTP/1.1" 303 - 0.0106
+216.184.25.169 - - [23/Jul/2014 18:17:48] "GET /thankyou HTTP/1.1" 200 1179 0.0171
+192.168.1.129 - - [23/Jul/2014 18:19:08] "GET / HTTP/1.1" 200 816 0.0031
+192.168.1.129 - - [23/Jul/2014 18:19:08] "GET /ionic.css HTTP/1.1" 200 204836 0.0029
+192.168.1.129 - - [23/Jul/2014 18:19:08] "GET /ionicons.css HTTP/1.1" 200 47987 0.0021
+192.168.1.129 - - [23/Jul/2014 18:19:08] "GET /logo.png HTTP/1.1" 200 6461 0.0017
+192.168.1.129 - - [23/Jul/2014 18:19:08] "GET /favicon.ico HTTP/1.1" 404 18 0.0017
+69.254.157.65 - - [23/Jul/2014 18:32:17] "GET / HTTP/1.1" 200 1450 0.0053
+69.254.157.65 - - [23/Jul/2014 18:32:17] "GET /ionic.css HTTP/1.1" 200 204836 0.0026
+69.254.157.65 - - [23/Jul/2014 18:32:17] "GET /logo.png HTTP/1.1" 200 6461 0.0016
+69.254.157.65 - - [23/Jul/2014 18:32:18] "GET /favicon.ico HTTP/1.1" 404 18 0.0016
+173.255.223.118 - - [23/Jul/2014 18:48:32] "GET / HTTP/1.0" 200 816 0.0041
+166.137.209.38 - - [23/Jul/2014 18:53:42] "GET / HTTP/1.1" 200 1450 0.0037
+166.137.209.38 - - [23/Jul/2014 18:53:42] "GET /ionic.css HTTP/1.1" 304 - 0.0020
+166.137.209.38 - - [23/Jul/2014 18:53:42] "GET /logo.png HTTP/1.1" 304 - 0.0041
+166.137.209.38 - - [23/Jul/2014 18:53:42] "GET /favicon.ico HTTP/1.1" 404 18 0.0019
+166.137.209.38 - - [23/Jul/2014 18:53:50] "GET /signup HTTP/1.1" 200 2117 0.0035
+166.137.209.38 - - [23/Jul/2014 18:53:51] "GET /ionicons.css HTTP/1.1" 304 - 0.0017
+166.137.209.38 - - [23/Jul/2014 18:53:51] "GET /favicon.ico HTTP/1.1" 404 18 0.0027
+166.137.209.38 - - [23/Jul/2014 18:53:51] "GET /fonts/ionicons.ttf?v=1.5.2 HTTP/1.1" 304 - 0.0017
+166.137.209.38 - - [23/Jul/2014 18:56:21] "POST /email HTTP/1.1" 303 - 0.0270
+166.137.209.38 - - [23/Jul/2014 18:56:21] "GET /thankyou HTTP/1.1" 200 1114 0.0056
+166.137.209.38 - - [23/Jul/2014 18:56:21] "GET /favicon.ico HTTP/1.1" 404 18 0.0020
+166.137.209.38 - - [23/Jul/2014 18:56:31] "GET /thankyou HTTP/1.1" 200 1289 0.0045
+166.137.209.38 - - [23/Jul/2014 18:56:32] "GET /favicon.ico HTTP/1.1" 404 18 0.0017
+166.137.209.38 - - [23/Jul/2014 18:56:38] "GET /thankyou HTTP/1.1" 200 1187 0.0045
+166.137.209.38 - - [23/Jul/2014 18:56:38] "GET /favicon.ico HTTP/1.1" 404 18 0.0017
+70.214.64.132 - - [23/Jul/2014 19:35:52] "GET /signup HTTP/1.1" 200 2117 0.0046
+70.214.64.132 - - [23/Jul/2014 19:35:52] "GET /ionic.css HTTP/1.1" 304 - 0.0017
+70.214.64.132 - - [23/Jul/2014 19:35:52] "GET /ionicons.css HTTP/1.1" 304 - 0.0014
+70.214.64.132 - - [23/Jul/2014 19:35:52] "GET /logo.png HTTP/1.1" 304 - 0.0014
+70.214.65.164 - - [23/Jul/2014 20:24:44] "GET / HTTP/1.1" 200 1450 0.0032
+70.214.65.164 - - [23/Jul/2014 20:24:45] "GET /ionic.css HTTP/1.1" 304 - 0.0016
+70.214.65.164 - - [23/Jul/2014 20:24:45] "GET /logo.png HTTP/1.1" 304 - 0.0020
+202.46.49.64 - - [23/Jul/2014 20:31:30] "GET /a HTTP/1.1" 404 18 0.0016
+202.46.57.85 - - [23/Jul/2014 21:02:45] "GET / HTTP/1.1" 200 816 0.0027
+119.63.193.194 - - [23/Jul/2014 21:03:54] "GET / HTTP/1.1" 200 816 0.0029
+107.4.46.253 - - [23/Jul/2014 21:07:12] "GET /favicon.ico HTTP/1.1" 404 18 0.0021
+173.255.223.118 - - [23/Jul/2014 22:00:37] "GET / HTTP/1.0" 200 816 0.0029
+192.168.1.129 - - [23/Jul/2014 22:16:37] "GET / HTTP/1.1" 200 816 0.0044
+192.168.1.129 - - [23/Jul/2014 22:16:37] "GET /ionic.css HTTP/1.1" 304 - 0.0017
+192.168.1.129 - - [23/Jul/2014 22:16:37] "GET /ionicons.css HTTP/1.1" 304 - 0.0015
+192.168.1.129 - - [23/Jul/2014 22:16:37] "GET /logo.png HTTP/1.1" 304 - 0.0014
+192.168.1.129 - - [23/Jul/2014 22:16:50] "GET / HTTP/1.1" 200 816 0.0034
+192.168.1.129 - - [23/Jul/2014 22:16:51] "GET /ionic.css HTTP/1.1" 304 - 0.0017
+192.168.1.129 - - [23/Jul/2014 22:16:51] "GET /ionicons.css HTTP/1.1" 304 - 0.0014
+192.168.1.129 - - [23/Jul/2014 22:16:51] "GET /logo.png HTTP/1.1" 304 - 0.0017
+192.168.1.129 - - [23/Jul/2014 22:16:52] "GET /config.xml HTTP/1.1" 404 18 0.0024
+192.168.1.129 - - [23/Jul/2014 22:16:52] "GET / HTTP/1.1" 200 816 0.0029
+192.168.1.129 - - [23/Jul/2014 22:17:02] "GET / HTTP/1.1" 200 816 0.0031
+192.168.1.129 - - [23/Jul/2014 22:17:04] "GET /ionic.css HTTP/1.1" 304 - 0.0018
+192.168.1.129 - - [23/Jul/2014 22:17:04] "GET /ionicons.css HTTP/1.1" 304 - 0.0015
+192.168.1.129 - - [23/Jul/2014 22:17:04] "GET /logo.png HTTP/1.1" 304 - 0.0014
+192.168.1.129 - - [23/Jul/2014 22:17:04] "GET /config.xml HTTP/1.1" 404 18 0.0018
+192.168.1.129 - - [23/Jul/2014 22:17:04] "GET / HTTP/1.1" 200 816 0.0027
+192.168.1.129 - - [23/Jul/2014 22:17:23] "GET / HTTP/1.1" 200 816 0.0031
+192.168.1.129 - - [23/Jul/2014 22:17:23] "GET /ionic.css HTTP/1.1" 304 - 0.0018
+192.168.1.129 - - [23/Jul/2014 22:17:23] "GET /ionicons.css HTTP/1.1" 304 - 0.0015
+192.168.1.129 - - [23/Jul/2014 22:17:23] "GET /logo.png HTTP/1.1" 304 - 0.0013
+192.168.1.129 - - [23/Jul/2014 22:17:24] "GET /config.xml HTTP/1.1" 404 18 0.0024
+192.168.1.129 - - [23/Jul/2014 22:17:24] "GET / HTTP/1.1" 200 816 0.0027
+192.168.1.129 - - [23/Jul/2014 22:17:26] "GET / HTTP/1.1" 200 816 0.0031
+192.168.1.129 - - [23/Jul/2014 22:17:26] "GET /ionic.css HTTP/1.1" 304 - 0.0024
+192.168.1.129 - - [23/Jul/2014 22:17:26] "GET /ionicons.css HTTP/1.1" 304 - 0.0022
+192.168.1.129 - - [23/Jul/2014 22:17:26] "GET /logo.png HTTP/1.1" 304 - 0.0022
+192.168.1.129 - - [23/Jul/2014 22:17:27] "GET /config.xml HTTP/1.1" 404 18 0.0016
+192.168.1.129 - - [23/Jul/2014 22:17:27] "GET / HTTP/1.1" 200 816 0.0041
+166.137.209.19 - - [23/Jul/2014 22:17:41] "GET / HTTP/1.1" 200 1450 0.0034
+166.137.209.19 - - [23/Jul/2014 22:17:41] "GET /logo.png HTTP/1.1" 304 - 0.0016
+166.137.209.19 - - [23/Jul/2014 22:17:41] "GET /ionic.css HTTP/1.1" 304 - 0.0018
+166.137.209.19 - - [23/Jul/2014 22:17:41] "GET /favicon.ico HTTP/1.1" 404 18 0.0017
+166.137.209.19 - - [23/Jul/2014 22:17:43] "GET /signup HTTP/1.1" 200 2117 0.0079
+166.137.209.19 - - [23/Jul/2014 22:17:43] "GET /ionicons.css HTTP/1.1" 304 - 0.0017
+166.137.209.19 - - [23/Jul/2014 22:17:44] "GET /favicon.ico HTTP/1.1" 404 18 0.0016
+166.137.209.19 - - [23/Jul/2014 22:17:44] "GET /fonts/ionicons.ttf?v=1.5.2 HTTP/1.1" 304 - 0.0014
+166.137.209.19 - - [23/Jul/2014 22:18:00] "POST /email HTTP/1.1" 303 - 0.0026
+166.137.209.19 - - [23/Jul/2014 22:18:00] "GET /thankyou HTTP/1.1" 200 1271 0.0043
+166.137.209.19 - - [23/Jul/2014 22:18:00] "GET /favicon.ico HTTP/1.1" 404 18 0.0017
+166.137.209.19 - - [23/Jul/2014 22:18:07] "GET /thankyou HTTP/1.1" 200 1076 0.0045
+166.137.209.19 - - [23/Jul/2014 22:18:07] "GET /favicon.ico HTTP/1.1" 404 18 0.0017

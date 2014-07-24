@@ -1,0 +1,12 @@
+!!!
+%html
+ %head
+  %title profile 
+ %body 
+  %h1 Hello #{@scope["user"]}
+  %p Last post.  
+  %p Type of beer <b>#{@scope["posts"]["beer"]}</b>
+  %p Comment <b>#{@scope["posts"]["comment"]}</b>
+  %a{href: "/logout"} Logout
+  %a{href: "/users"} List of Users
+
